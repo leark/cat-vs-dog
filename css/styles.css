@@ -1,7 +1,49 @@
+body {
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: -webkit-linear-gradient(#f7ae2b, #be6724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9f0000;
+}
+
+h2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #9f0000;
+}
+
 img {
   width: 35%;
   height: auto;
   cursor: pointer;
+}
+
+#vs {
+  position: relative;
+  top: -200px;
+}
+
+#cat-txt {
+  display: inline-block;
+  position: relative;
+  left: -1000px;
+  background: -webkit-linear-gradient(#f7ae2b, #be6724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#dog-txt {
+  display: inline-block;
+  position: relative;
+  right: -1000px;
+  background: -webkit-linear-gradient(#f7ae2b, #be6724);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dog-open {
@@ -10,6 +52,8 @@ img {
 }
 
 .dog-closed {
+  position: relative;
+  right: 800px;
   float: left;
 }
 
@@ -19,6 +63,8 @@ img {
 }
 
 .cat-closed {
+  position: relative;  
+  left: 800px; 
   float: right;
 }
 
@@ -28,4 +74,27 @@ body {
 
 li {
   cursor: pointer;
+  list-style: none;
+}
+
+#dog-ul li {
+  color: red;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: large;
+  position: relative;
+  left: -200px;
+}
+
+#cat-ul li {
+  color: green;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: large;
+  position: relative;
+  right: -200px;
+}
+
+#vs {
+  width: 100px;
 }

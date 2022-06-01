@@ -1,4 +1,34 @@
 $(document).ready(function () {
+  $('#vs').animate(
+    {
+      top: '+=200px',
+    },
+    'fast'
+  );
+  $('#cat-txt').animate(
+    {
+      left: '+=1000px',
+    },
+    'fast'
+  );
+  $('#dog-txt').animate(
+    {
+      right: '+=1000px',
+    },
+    'fast'
+  );
+  $('.dog-closed').animate(
+    {
+      left: '+=800px',
+    },
+    'slow'
+  );
+  $('.cat-closed').animate(
+    {
+      left: '-=800px',
+    },
+    'slow'
+  );
   $('.dog-closed').click(function () {
     $(this).toggle();
     $('.dog-open').toggle();
@@ -12,12 +42,24 @@ $(document).ready(function () {
       .click(function () {
         $(this).remove();
       });
+    $('#dog-ul li').first().animate(
+      {
+        left: '+=200px',
+      },
+      'slow'
+    );
     $('ul#cat-ul')
       .children('li')
       .first()
       .click(function () {
         $(this).remove();
       });
+    $('#cat-ul li').animate(
+      {
+        right: '+=200px',
+      },
+      'slow'
+    );
   });
 
   $('.cat-closed').click(function () {
@@ -39,6 +81,24 @@ $(document).ready(function () {
       .click(function () {
         $(this).remove();
       });
+    $('#dog-ul li').animate(
+      {
+        left: '+=200px',
+      },
+      'slow'
+    );
+    $('ul#cat-ul')
+      .children('li')
+      .first()
+      .click(function () {
+        $(this).remove();
+      });
+    $('#cat-ul li').first().animate(
+      {
+        right: '+=200px',
+      },
+      'slow'
+    );
   });
 
   $('.dog-open').click(function () {
