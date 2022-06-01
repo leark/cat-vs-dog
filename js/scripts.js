@@ -6,6 +6,18 @@ $(document).ready(function () {
     $('.cat-closed').toggle();
     $('.cat-open').toggle();
     $('#cat-ul').prepend('<li>Meow!!!!</li>');
+    $('ul#dog-ul')
+      .children('li')
+      .first()
+      .click(function () {
+        $(this).remove();
+      });
+    $('ul#cat-ul')
+      .children('li')
+      .first()
+      .click(function () {
+        $(this).remove();
+      });
   });
 
   $('.cat-closed').click(function () {
@@ -15,6 +27,18 @@ $(document).ready(function () {
     $('.dog-closed').toggle();
     $('.cat-open').toggle();
     $('#cat-ul').prepend('<li>Meow</li>');
+    $('ul#dog-ul')
+      .children('li')
+      .first()
+      .click(function () {
+        $(this).remove();
+      });
+    $('ul#cat-ul')
+      .children('li')
+      .first()
+      .click(function () {
+        $(this).remove();
+      });
   });
 
   $('.dog-open').click(function () {
@@ -30,17 +54,4 @@ $(document).ready(function () {
     $('.dog-open').toggle();
     $('.cat-closed').toggle();
   });
-
-  $('ul#dog-ul')
-    .children('li')
-    .first()
-    .click(function () {
-      $(this).remove();
-    });
-  $('ul#cat-ul')
-    .children('li')
-    .first()
-    .click(function () {
-      $(this).remove();
-    });
 });
