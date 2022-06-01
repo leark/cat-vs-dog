@@ -1,0 +1,31 @@
+img {
+  width: 35%;
+  height: auto;
+  cursor: pointer;
+}
+
+.dog-open {
+  float: left;
+  display: none;
+}
+
+.dog-closed {
+  float: left;
+}
+
+.cat-open {
+  display: none;
+  float: right;
+}
+
+.cat-closed {
+  float: right;
+}
+
+body {
+  text-align: center;
+}
+
+li {
+  cursor: pointer;
+}
